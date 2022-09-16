@@ -29,11 +29,22 @@ h1{
     color: #000;
     text-shadow: 1px 1px 2px rgb(237, 237, 11);
     border-bottom: 1px solid black;
-    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .number{
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px;
+    color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.experiencia-pokemons{
+    font-size: 18px;
+    color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.peso-pokemon{
+    font-size: 18px;
     color: #000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
