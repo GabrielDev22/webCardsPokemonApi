@@ -5,7 +5,6 @@ function getData(id){
     .then((res) => res.json())
     .then((data) => {
         createPokemons(data)
-        console.log(data)
     })
 }
 
@@ -25,9 +24,10 @@ function createPokemons(pokemons){
           titulo = document.createElement('h2'),
           number = document.createElement('p'),
           baseExperiencia = document.createElement('p'),
-          peso = document.createElement('p');
-         
-          
+          peso = document.createElement('p'),
+          stat = document.createElement('li');
+
+
     // DANDOLE CLASES A LOS ELEMETOS CREADOS EN EL DOM
         titulo.classList.add('titulo')  
         number.classList.add('number')
@@ -42,8 +42,8 @@ function createPokemons(pokemons){
           titulo.textContent = pokemons.name
           number.textContent = `Tarjeta: #${pokemons.id.toString().padStart(3, 0)}`;
           imagen.src = pokemons.sprites.other.home.front_default;
-          peso.textContent = `Peso: ${pokemons.weight}`
-         
+          peso.textContent = `Peso: ${pokemons.weight}`;
+
     
           imagenContainer.appendChild(imagen);
 
@@ -53,12 +53,17 @@ function createPokemons(pokemons){
           card.appendChild(peso)
           card.appendChild(baseExperiencia)
 
-
           // HACIENDO UN ARRAY PARA LOS STAT DE LOS POKEMONS
 
           pokemonContainer.appendChild(card);
 }
-pokemons(9);
+pokemons(200);
+
+
+
+
+
+
 
 
 

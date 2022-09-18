@@ -60,3 +60,36 @@ h1{
     width: 200px;
     text-align: center;
 }
+
+@media screen and (max-width: 600px){
+    body{
+        width: 100%;
+    }
+
+    h1{
+        margin-left: 50px;
+    }
+
+    .pokemon-container{
+        margin-left: 40px ;
+        width: 500px;
+    }
+
+    .pokemon-block{
+        width: 50%;
+        margin: 30px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contenedor-imagen{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .imagen{
+        margin: 20px;
+        width: 200px;
+    } 
+}
