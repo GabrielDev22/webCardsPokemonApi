@@ -11,6 +11,16 @@ h1{
     flex-flow: wrap;
 }
 
+.stats-container{
+    font-size: 18px;
+    color: #000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.stat-element{
+    display: flex;
+    flex-direction: row;
+}
+
 .pokemon-block{
     border-radius: 20px;
     width: 20%;
@@ -67,20 +77,19 @@ h1{
     }
 
     h1{
-      margin-left: 250px;
+      text-align: center;
     }
 
     .pokemon-container{
-        margin-left: 40px ;
-        width: 700px;
+        margin-top: 30px;
+        width: 100%;
     }
 
     .pokemon-block{
-        width: 30%;
-        margin: 30px;
+        width: 400px;
+        margin-top: 20px;
         justify-content: center;
         align-items: center;
-
     }
 
     .contenedor-imagen{
@@ -89,7 +98,7 @@ h1{
     }
     
     .imagen{
-        margin: 10px;
+        margin-left: 60px;
         width: 200px;
     } 
 }

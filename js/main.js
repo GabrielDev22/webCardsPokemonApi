@@ -24,8 +24,8 @@ function createPokemons(pokemons){
           titulo = document.createElement('h2'),
           number = document.createElement('p'),
           baseExperiencia = document.createElement('p'),
-          peso = document.createElement('p'),
-          stat = document.createElement('li');
+          peso = document.createElement('p');
+          
 
 
     // DANDOLE CLASES A LOS ELEMETOS CREADOS EN EL DOM
@@ -44,20 +44,49 @@ function createPokemons(pokemons){
           imagen.src = pokemons.sprites.other.home.front_default;
           peso.textContent = `Peso: ${pokemons.weight}`;
 
-    
+        
           imagenContainer.appendChild(imagen);
+
 
           card.appendChild(imagenContainer);
           card.appendChild(titulo);
           card.appendChild(number);
-          card.appendChild(peso)
-          card.appendChild(baseExperiencia)
+          card.appendChild(peso);
+          card.appendChild(baseExperiencia);
+          card.appendChild(progressBars(pokemons.stats))
+    
 
           // HACIENDO UN ARRAY PARA LOS STAT DE LOS POKEMONS
 
           pokemonContainer.appendChild(card);
 }
 pokemons(200);
+
+function progressBars(stats){
+    const statsContainer = document.createElement('div');
+          statsContainer.classList.add("stats-container");
+
+          stats.forEach(stat => {
+            const statElement = document.createElement('p');
+            const statElementName = document.createElement('p');
+            const statElementAmount = document.createElement('p');
+
+            statElement.classList.add('stat-element')
+            statElementName.classList.add('stat-element_name')
+            statElementAmount.classList.add('stat-element_amount')
+
+            statElementName.textContent = stat.stat.name;
+            statElementAmount.textContent = `: ${stat.base_stat}`;
+
+            statElement.appendChild(statElementName);
+            statElement.appendChild(statElementAmount);
+            statsContainer.appendChild(statElement);
+          });
+
+          return statsContainer;
+}
+
+
 
 
 
