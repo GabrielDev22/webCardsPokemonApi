@@ -61,22 +61,22 @@ h1{
     text-align: center;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     body{
         width: 100%;
     }
 
     h1{
-        margin-left: 50px;
+      margin-left: 250px;
     }
 
     .pokemon-container{
         margin-left: 40px ;
-        width: 500px;
+        width: 700px;
     }
 
     .pokemon-block{
-        width: 50%;
+        width: 30%;
         margin: 30px;
         justify-content: center;
         align-items: center;
@@ -89,7 +89,7 @@ h1{
     }
     
     .imagen{
-        margin: 20px;
+        margin: 10px;
         width: 200px;
     } 
 }
