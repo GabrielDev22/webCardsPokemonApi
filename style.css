@@ -1,9 +1,12 @@
 body{
-    background-color: rgb(34,193,195);
+    background-color: aliceblue;
 }
 
 h1{
     text-align:  center;
+    text-shadow: 2px 2px 4px rgb(115, 235, 157);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
 }
 .pokemon-container{
     display: flex;
@@ -12,9 +15,11 @@ h1{
 }
 
 .stats-container{
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .stat-element{
     display: flex;
@@ -22,12 +27,12 @@ h1{
 }
 
 .pokemon-block{
+    background-color: rgb(147, 212, 252);
     border-radius: 20px;
     width: 20%;
-    margin: 30px;
-    border: 1px solid black;
-    background: rgb(63,94,251);
-    background: linear-gradient(34deg, rgba(63,94,251,1) 0%, rgba(70,252,247,1) 100%);
+    margin-left: 70px;
+    margin-bottom: 50px;
+    border: 7px solid black;
 }
 .pokemon-block:hover{
     transform: scale(1.1);
@@ -35,33 +40,37 @@ h1{
 }
 .titulo{
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
     color: #000;
-    text-shadow: 1px 1px 2px rgb(237, 237, 11);
+    text-shadow: 2px 2px 4px rgb(22, 240, 222);
     border-bottom: 1px solid black;
     margin-bottom: 30px;
+    background-color: rgb(46, 5, 84);
 }
 .number{
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .experiencia-pokemons{
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .peso-pokemon{
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .contenedor-imagen{
-    width: 300px;
+    width: 250px;
     height: 250px;
+    margin-left: 30px;
+    background-color: rgb(31, 4, 57);
+    border-radius: 200px;
 }
 
 .imagen{
@@ -81,7 +90,6 @@ h1{
     }
 
     .pokemon-container{
-        margin-top: 30px;
         width: 100%;
         color: #000;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -90,17 +98,19 @@ h1{
     .pokemon-block{
         width: 400px;
         margin-top: 20px;
+        margin-right: 60px;
         justify-content: center;
         align-items: center;
     }
 
     .contenedor-imagen{
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+        margin-right: 20px;
     }
     
     .imagen{
-        margin-left: 60px;
-        width: 200px;
+        margin-left: 20px;
+        width: 150px;
     } 
 }
