@@ -83,6 +83,8 @@ h1{
     .pokemon-container{
         margin-top: 30px;
         width: 100%;
+        color: #000;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .pokemon-block{
