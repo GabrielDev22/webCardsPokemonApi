@@ -1,3 +1,10 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 16px;
+}
+
 body{
     background-color: aliceblue;
 }
@@ -29,7 +36,7 @@ h1{
 .pokemon-block{
     background-color: rgb(147, 212, 252);
     border-radius: 20px;
-    width: 19%;
+    width: 300px;
     margin-left: 70px;
     margin-bottom: 50px;
     border: 7px solid black;
@@ -68,7 +75,7 @@ h1{
 .contenedor-imagen{
     width: 250px;
     height: 250px;
-    margin-left: 30px;
+    margin-left: 20px;
     background-color: rgb(31, 4, 57);
     border-radius: 200px;
 }
